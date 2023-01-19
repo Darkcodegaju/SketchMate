@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const API = axios.create({
-  baseURL: "https://rich-erin-binturong-hat.cyclic.app",
+  baseURL: https://sketchmatey.onrender.com",
 });
 
 API.interceptors.request.use((req) => {
