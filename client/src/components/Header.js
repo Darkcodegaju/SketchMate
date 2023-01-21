@@ -218,13 +218,24 @@ const Header = () => {
           </form>
           
           {user?.result?._id ? (
-              <MDBDropdown group>
-              <MDBDropdownToggle color='dark'>{firstLetter}</MDBDropdownToggle>
-              <MDBDropdownMenu>
-                  <MDBDropdownItem  link onClick={() => handleLogout()}   href="/login" style={{color: "dark", cursor: "pointer", }}> Logout</MDBDropdownItem>
-                 </MDBDropdownMenu>
+          <details class="dropdown">
+    <summary role="button">
+      <a class="button">{firstLetter}</a>
+    </summary>
+    <ul>
+      <li><a href="#">I'm a dropdown.</a></li>
+      <li><a href="/login" onClick={() => handleLogout()} >In Pure CSS</a></li>
+      
+  </ul>
+</details>
+
+//               <MDBDropdown group>
+//               <MDBDropdownToggle color='dark'>{firstLetter}</MDBDropdownToggle>
+//               <MDBDropdownMenu>
+//                   <MDBDropdownItem  link onClick={() => handleLogout()}   href="/login" style={{color: "dark", cursor: "pointer", }}> Logout</MDBDropdownItem>
+//                  </MDBDropdownMenu>
                 
-              </MDBDropdown>
+//               </MDBDropdown>
             ):( <div></div>)}
           
         
