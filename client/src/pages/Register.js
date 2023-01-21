@@ -57,7 +57,7 @@ const Register = () => {
       }}
     >
       <MDBCard alignment="center">
-        <MDBIcon fas icon="user-circle" className="fa-2x" />
+        <MDBIcon fas icon="user-circle" className="fa-2x"  style={{margin:"10px"}}/>
         <h5>Sign Up</h5>
         <MDBCardBody>
           <MDBValidation onSubmit={handleSubmit} noValidate className="row g-3">
