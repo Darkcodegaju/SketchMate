@@ -64,7 +64,8 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const token = user?.token;
-  const firstLetter =  user?.result?.name.split(" ");
+  const firstLetter =  user?.result?.name[0].toUpperCase()+user?.result?.name.slice(1);
+  
 
   const [open, setOpen] = useState(false);
 
