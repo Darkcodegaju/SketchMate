@@ -224,7 +224,7 @@ const Header = () => {
       <a class="button">{firstLetter}</a>
     </summary>
     <ul>
-       <li><a href="/dashboard" >Edit Sketches</a></li>
+       
       <li><a href="/login" onClick={() => handleLogout()} >Logout</a></li>
       
   </ul>
