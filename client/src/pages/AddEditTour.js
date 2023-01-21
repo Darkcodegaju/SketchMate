@@ -7,7 +7,6 @@ import {
   MDBInput,
   MDBIcon
 } from "mdb-react-ui-kit";
-import ChipInput from "material-ui-chip-input";
 import FileBase from "react-file-base64";
 import { toast } from "react-toastify";
 import { useNavigate, useParams } from "react-router-dom";
@@ -139,7 +138,7 @@ const AddEditTour = () => {
               />
             </div>
             <div className="col-md-12">
-              <ChipInput
+              <input
                 name="tags"
                 variant="outlined"
                 placeholder="Enter Tag"
