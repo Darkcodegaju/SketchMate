@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const API = axios.create({
-  baseURL: https://sketchmatey.onrender.com",
+  baseURL: "https://sketchmatey.onrender.com",
 });
 
 API.interceptors.request.use((req) => {
