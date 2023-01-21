@@ -2,8 +2,8 @@
 
 /* Tweak to change the look and feel */
 :root {
-  --button-background: dodgerblue;
-  --button-color: white;
+ --button-background: #ADD8E6;
+  --button-color:	#2F4F4F;
   
   --dropdown-highlight: dodgerblue;
   --dropdown-width: 160px;
@@ -15,7 +15,7 @@
 a.button {
   /* Frame */
   display: inline-block;
-  padding: 20px 28px;
+  padding: 0px 10px;
   border-radius: 50px;
   box-sizing: border-box;
   
@@ -23,7 +23,7 @@ a.button {
   border: none;
   background: var(--button-background);
   color: var(--button-color);
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
 }
 
