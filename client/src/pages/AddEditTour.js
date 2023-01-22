@@ -80,6 +80,7 @@ const AddEditTour = () => {
     setTourData({ ...tourData, [name]: value });
   };
   const handleAddTag = (tag) => {
+   
     setTagErrMsg(null);
     setTourData({ ...tourData, tags: [...tourData.tags, tag] });
   };
@@ -143,6 +144,8 @@ const AddEditTour = () => {
                 variant="outlined"
                 placeholder="Enter Tag"
                 fullWidth
+                rows={4}
+                onChange={onInputChange}
                 value={tags}
                 onAdd={(tag) => handleAddTag(tag)}
                 onDelete={(tag) => handleDeleteTag(tag)}
