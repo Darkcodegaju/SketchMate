@@ -138,7 +138,7 @@ const AddEditTour = () => {
               />
             </div>
             <div className="col-md-12">
-              <input
+              <MDBInput
                 name="tags"
                 variant="outlined"
                 placeholder="Enter Tag"
