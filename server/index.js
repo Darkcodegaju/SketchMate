@@ -8,6 +8,20 @@ import dotenv from "dotenv";
 
 
 
+
+
+const port =  process.env.PORT || 5000;
+// process.env.MONGODB_URL 
+// const URL = "mongodb+srv://root:root@cluster0.ufex2xq.mongodb.net/?retryWrites=true&w=majority"
+dotenv.config();
+
+
+const app = express();
+app.use(morgan("dev"));
+app.use(express.json({ limit: "30mb", extended: true }));
+app.use(express.urlencoded({ limit: "30mb", extended: true }));
+app.use(cors());
+
 app.get('/download-image', async (req, res) => {
   try {
     const imageUrl = req.query.url;
@@ -26,18 +40,6 @@ app.get('/download-image', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
-
-const port =  process.env.PORT || 5000;
-// process.env.MONGODB_URL 
-// const URL = "mongodb+srv://root:root@cluster0.ufex2xq.mongodb.net/?retryWrites=true&w=majority"
-dotenv.config();
-
-
-const app = express();
-app.use(morgan("dev"));
-app.use(express.json({ limit: "30mb", extended: true }));
-app.use(express.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors());
 
 app.get('/',(req,res)=>
 {
