@@ -15,6 +15,7 @@ import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
 import NotFound from "./pages/NotFound";
 import TagTours from "./pages/TagTours";
+import Img from "./components/Img";
 
 function App() {
   const dispatch = useDispatch();
@@ -62,6 +63,14 @@ function App() {
               <PrivateRoute>
                 <Dashboard />
               </PrivateRoute>
+            }
+          />
+               <Route
+            path="/sketchai"
+            element={
+              <PrivateRoute>
+                <Img/>
+             </PrivateRoute>
             }
           />
           <Route path="*" element={<NotFound />} />
